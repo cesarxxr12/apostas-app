@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratórios</title><link rel="stylesheet" href="style.css"></head>
+<body><main><div id="upd" class="sub upd"></div>
+<section class="lab"><h2>Laboratório 1</h2><div id="lab1"></div></section>
+<section class="lab"><h2>Laboratório 2</h2><div id="lab2"></div></section>
+
+<details class="sec"><summary>Adicionar jogo</summary>
+<form id="f">
+<div class="g">
+<label>Casa<input name="casa" required></label>
+<label>Fora<input name="fora" required></label>
+<label>Odd favorito<input name="oddFavorito" type="number" step="0.01" required></label>
+<label>Favorito<select name="favoritoCasa"><option value="true">Casa</option><option value="false">Fora</option></select></label>
+<label>Motivo / contexto<input name="motivo"></label>
+<label>Odd empate<input name="oddEmpate" type="number" step="0.01"></label>
+<label>Odd vitória outsider<input name="oddOutsider" type="number" step="0.01"></label>
+<label>Odd under 2.5<input name="oddUnder25" type="number" step="0.01"></label>
+<label>Lacuna<input name="lacuna"></label>
+</div>
+<div class="chk">
+<label><input type="checkbox" name="adversarioFraco"> Adversário fraco</label>
+<label><input type="checkbox" name="desnivelExtremo"> Desnível extremo</label>
+<label><input type="checkbox" name="derby"> Derby / clássico</label>
+<label><input type="checkbox" name="lesoesGraves"> Lesões graves no favorito</label>
+<label><input type="checkbox" name="favoritoEsteril"> Favorito estéril / desfalcado</label>
+<label><input type="checkbox" name="outsiderBloco"> Outsider com bloco</label>
+</div>
+<button type="submit">Adicionar</button>
+</form></details>
+
+<details class="sec"><summary>Importar JSON</summary>
+<textarea id="json" rows="6" placeholder="[ { ... } ]"></textarea>
+<button id="imp">Importar</button> <button id="clr">Limpar card</button> <span id="msg"></span>
+<details class="help"><summary>Exemplo</summary><pre id="ex"></pre></details>
+</details>
+
+<details class="sec"><summary>Card actual</summary><ul id="card"></ul></details>
+
+<details class="sec"><summary>Registo</summary>
+<ul id="reg"></ul></details>
+</main><script src="app.js"></script></body></html>

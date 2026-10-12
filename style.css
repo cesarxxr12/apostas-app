@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{margin:0;background:#0f0f0f;color:#f0f0f0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:500}
+main{max-width:640px;margin:0 auto;padding:20px 16px}
+h2{font-size:18px;margin:24px 0 10px}
+.card{background:#1a1a1a;border-radius:8px;padding:14px;margin-bottom:10px;animation:fi .25s ease-out}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.t{font-size:16px;margin-bottom:6px}
+.row{display:flex;gap:24px;margin-bottom:6px}
+.green{color:#3dd68c}.red{color:#e05a5a}.stake{color:#aaa}.sub{color:#888;font-size:14px}
+.zero{color:#888}.zero b{color:#f0f0f0}
+.m{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+button{background:#1a1a1a;color:#f0f0f0;border:1px solid #333;border-radius:6px;padding:6px 12px;font:inherit;cursor:pointer;margin-top:8px}
+.sec{margin-top:18px;color:#888;font-size:14px}
+.sec summary{cursor:pointer}
+input,select,textarea{width:100%;background:#1a1a1a;color:#f0f0f0;border:1px solid #333;border-radius:4px;padding:6px;font:inherit}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.g label{display:flex;flex-direction:column;gap:3px}
+.chk{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:8px}
+.chk input{width:auto}
+ul{padding-left:0;list-style:none}li{padding:4px 0;border-bottom:1px solid #1a1a1a}
+li select{width:auto;padding:2px;margin-left:6px}
+pre{white-space:pre-wrap;color:#888;font-size:12px}
+.fontes{font-size:12px;margin-top:4px}.upd{font-size:12px}
